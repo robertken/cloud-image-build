@@ -8,8 +8,8 @@
 		"cpu": "4",
 		"memory": "2048",
 		"disk_size" : "10000",
-		"iso_url": "http://us.cdimage.ubuntu.com/releases/18.04/release/ubuntu-18.04.3-server-amd64.iso",
-        "iso_checksum": "cb7cd5a0c94899a04a536441c8b6d2bf",
+		"iso_url":"http://us.cdimage.ubuntu.com/releases/18.04/release/ubuntu-18.04.3-server-amd64.iso",
+		"iso_checksum":"cb7cd5a0c94899a04a536441c8b6d2bf",
         "iso_checksum_type": "md5"
     },
 
@@ -33,7 +33,7 @@
         "<esc><wait10><esc><esc><enter><wait>",
         "set gfxpayload=1024x768<enter>",
         "linux /install/vmlinuz ",
-        "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed_ubuntu18_hyperv.cfg ",
+        "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed_ubuntu18.cfg ",
         "debian-installer=en_US auto locale=en_US kbd-chooser/method=us ",
         "hostname={{.Name}} ",
         "fb=false debconf/frontend=noninteractive ",
