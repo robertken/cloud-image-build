@@ -3,8 +3,8 @@
         "ssh_name": "ubuntu",
         "ssh_pass": "hpccdemo",
         "hostname": "gnn_test",
-		"vm_name": "ubuntu-hyperv-18",
-		"output_directory": "vm_outputs/hyperv_18.04_7.8.18",
+		"vm_name": "hpcc-7.8.18",
+		"output_directory": "vm_outputs/{{user `vm_name`}}",
 		"hpcc_version":"7.8.18",
 		"cpu": "4",
 		"memory": "2048",
@@ -84,9 +84,6 @@
 	  "sudo apt-get -y install libxslt1.1",
 	  "sudo apt-get -y install libcurl3-gnutls",
 	  "sudo apt-get -y install ganglia-monitor",
-	  "sudo apt-get -y install git",
-	  "ecl bundle install https://github.com/hpcc-systems/ML_Core.git",
-	  "ecl bundle install ecl bundle install https://github.com/hpcc-systems/GNN.git",
       "sudo dpkg -i /tmp/*.deb"
     ]
   }]
