@@ -1,6 +1,6 @@
 #!/bin/sh
 
-HPCC_VERSION="7.2.14"
+HPCC_VERSION="7.8.18"
 
 WORKING_DIR="../hpcc-systems"
 wget=/usr/bin/wget

@@ -4,7 +4,8 @@
         "ssh_pass": "hpccdemo",
         "hostname": "gnn_test",
 		"vm_name": "ubuntu-hyperv-18",
-		"output_directory": "vm_outputs/hyperv_18.04_7.2.12",
+		"output_directory": "vm_outputs/hyperv_18.04_7.8.18",
+		"hpcc_version":"7.8.18",
 		"cpu": "4",
 		"memory": "2048",
 		"disk_size" : "10000",
@@ -53,7 +54,7 @@
   "provisioners": [
   {
 	"type":"file",
-	"source":"../../hpcc-systems/bionic/",
+	"source":"../../hpcc-systems/bionic_{{user `hpcc_version` }}/",
 	"destination":"/tmp/"
   },
   {
