@@ -1,4 +1,5 @@
 #!/bin/sh
+#!/bin/sh
 
 HPCC_VERSION="7.8.18"
 
@@ -10,7 +11,7 @@ if [ ! -x "$wget" ]; then
   exit 1
 fi
 
-mkdir -p ../hpcc-systems/bionic
+mkdir -p ../hpcc-systems/bionic_${HPCC_VERSION}
 
 wget -P ../hpcc-systems/bionic_${HPCC_VERSION}/ https://d2wulyp08c6njk.cloudfront.net/releases/CE-Candidate-${HPCC_VERSION}/bin/platform/hpccsystems-platform-community_${HPCC_VERSION}-1bionic_amd64.deb
 wget -P ../hpcc-systems/bionic_${HPCC_VERSION}/ https://d2wulyp08c6njk.cloudfront.net/releases/CE-Candidate-${HPCC_VERSION}/bin/plugins/hpccsystems-plugin-couchbaseembed_${HPCC_VERSION}-1bionic_amd64.deb

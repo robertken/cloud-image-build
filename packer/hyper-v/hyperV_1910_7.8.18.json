@@ -3,14 +3,14 @@
         "ssh_name": "ubuntu",
         "ssh_pass": "hpccdemo",
         "hostname": "gnn_test",
-		"vm_name": "hpcc-7.8.18",
+		"vm_name": "hpcc-eoan7.8.18",
 		"output_directory": "vm_outputs/{{user `vm_name`}}",
 		"hpcc_version":"7.8.18",
 		"cpu": "4",
 		"memory": "2048",
 		"disk_size" : "10000",
-		"iso_url":"http://us.cdimage.ubuntu.com/releases/18.04/release/ubuntu-18.04.4-server-amd64.iso",
-		"iso_checksum":"d5bc5c59c24191bb45dd85fc6a420b34",
+		"iso_url":"http://cdimage.ubuntu.com/releases/19.10/release/ubuntu-19.10-server-amd64.iso",
+		"iso_checksum":"4096d4a1d02b5de4693de480b9acfcf0",
         "iso_checksum_type": "md5"
     },
 
