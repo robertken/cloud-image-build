@@ -19,7 +19,7 @@
     },
     "instance_type": "{{user `aws_instance_size`}}",
     "ssh_username": "ubuntu",
-    "ami_name": "GPU - hpccsystems-platform-community_{{user `hpcc_version` }}-1bionic_amd64 {{timestamp}} - TF2",
+    "ami_name": "GPU - hpccsystems-platform-community_{{user `hpcc_version` }}-1bionic_amd64 {{timestamp}} - TF1.14",
 	"associate_public_ip_address": true,
 	"vpc_id": "vpc-0b45e2a57c4cce670",
 	"subnet_id":"subnet-09e9c23071164f292",
@@ -87,7 +87,8 @@
 	  "sudo apt-get install -y ./nvidia-machine-learning-repo-ubuntu1804_1.0.0-1_amd64.deb",
 	  "sudo apt-get update -y",
 	  
-	  "sudo apt-get install -y --no-install-recommends nvidia-driver-418",
+	  "sudo apt-get install -y --no-install-recommends nvidia-driver-450",
+	  "sudo apt-get update -y",
 	  "sudo apt-get install -y --no-install-recommends cuda-10-0 libcudnn7=7.6.0.64-1+cuda10.0  libcudnn7-dev=7.6.0.64-1+cuda10.0",
 	  
 	  "sudo rm cuda-repo-ubuntu1804_10.0.130-1_amd64.deb",
